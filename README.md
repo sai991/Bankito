@@ -21,8 +21,6 @@ This online bank management application will provide the following services to c
  SPRING BOOT
  ANGULAR
  
- DIAGRAM OF ONLINE BANK MANAGEMENT APP ->
- <img src="file:///C:/Users/Administrator/Documents/Project0Diagram.png" width=800px height=400px><br>
   
   TEAM MEMBERS NAME AND THEIR RESPECTIVE CONTRIBUTION ON PROJECT ->
  
