@@ -376,3 +376,15 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 19:16:16.922
 !MESSAGE executing callback sts4.classpath.GpxQLYbs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 20:20:55.915
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GpxQLYbs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 20:20:55.977
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.GpxQLYbs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 20:20:55.979
+!MESSAGE subsribers = {sts4.classpath.wPDFqaFn=Send Classpath Notifications(784)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 20:20:55.980
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GpxQLYbs => OK
