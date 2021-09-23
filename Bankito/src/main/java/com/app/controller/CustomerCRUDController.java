@@ -1,6 +1,8 @@
 package com.app.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,15 +34,15 @@ public class CustomerCRUDController {
 
 	}
 
-	@GetMapping("/customer/{customer_id}")
-	public Customer getCustomerById(@PathVariable int customer_id) {
-		return service.getCustomerById(customer_id);
+	@GetMapping("/customer/{customerId}")
+	public Customer getCustomerById(@PathVariable int customerId) {
+		return service.getCustomerById(customerId);
 	}
 
-	@DeleteMapping("/customer/{customer_id}")
-	public void deleteCustomer(@PathVariable int customer_id) {
+	@DeleteMapping("/customer/{customerId}")
+	public void deleteCustomer(@PathVariable int customerId) {
 
-		service.deleteCustomer(customer_id);
+		service.deleteCustomer(customerId);
 	}
 
 }

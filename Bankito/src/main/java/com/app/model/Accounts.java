@@ -7,16 +7,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
 
-import lombok.Data;
+import org.springframework.stereotype.Component;
 
+import lombok.Data;
+@Component
 @Data
 @Entity
 @Table
 public class Accounts {
-private int customer_id;
+private int customerId;
 @TableGenerator(name = "Address_Gen", initialValue = 10000, allocationSize = 100)
 @Id
 @GeneratedValue(strategy = GenerationType.TABLE, generator = "Address_Gen")
-private int account_id;
+private int accountId;
 
 }

@@ -19,14 +19,14 @@ public class CustomerCRUDServiceImpl implements CustomerCRUDService {
 	}
 
 	@Override
-	public Customer getCustomerById(int customer_id) {
+	public Customer getCustomerById(int customerId) {
 
-		return repository.findById(customer_id).get();
+		return repository.findById(customerId).get();
 	}
 
 	@Override
-	public void deleteCustomer(int customer_id) {
-		repository.deleteById(customer_id);
+	public void deleteCustomer(int customerId) {
+		repository.deleteById(customerId);
 	}
 
 	@Override
