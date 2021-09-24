@@ -35,4 +35,13 @@ public class CustomerCRUDServiceImpl implements CustomerCRUDService {
 		return repository.save(customer);
 	}
 
+	@Override
+	public Customer findByCustomerEmail(String customerEmail) {
+		Customer c=new Customer();
+		c=repository.findByCustomerEmail(customerEmail);
+		
+		return c;
+	
+	}
+
 }

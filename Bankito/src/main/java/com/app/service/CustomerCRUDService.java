@@ -7,5 +7,6 @@ public interface CustomerCRUDService {
 	Customer getCustomerById(int customer_id);
 	void deleteCustomer(int customer_id);
 	Customer addCustomer(Customer customer);
+	Customer findByCustomerEmail(String customerEmail);
 	
 }
