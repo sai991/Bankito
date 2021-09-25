@@ -31,4 +31,11 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 		return repository.findAll();
 	}
 
+	@Override
+	public long getBalance(int customerId) {
+		Customer c=new Customer();
+		c= repository.findById(customerId).get();
+		return c.getCustomerBalance();
+	}
+
 }

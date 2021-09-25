@@ -8,5 +8,5 @@ public interface CustomerCRUDService {
 	void deleteCustomer(int customer_id);
 	Customer addCustomer(Customer customer);
 	Customer findByCustomerEmail(String customerEmail);
-	
+	boolean ifCustomerExist(String email) throws Exception;
 }

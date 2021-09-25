@@ -33,6 +33,11 @@ public class CustomerSearchController {
 			// TODO Auto-generated method stub
 			return service.getCustomerByCity(city);
 		}
+		@GetMapping("/customers/{customerId}")
+		public long getCustomerBalance(@PathVariable int customerId) {
+			// TODO Auto-generated method stub
+			return service.getBalance(customerId);
+		}
 
 	}
 

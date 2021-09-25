@@ -11,4 +11,5 @@ public interface CustomerSearchService {
 	List<Customer> getAllCustomers();
 	List<Customer> getCustomerByName(String customerFirstname);
 	List<Customer> getCustomerByCity(String customerCity);
+	long getBalance(int customerId);
 }

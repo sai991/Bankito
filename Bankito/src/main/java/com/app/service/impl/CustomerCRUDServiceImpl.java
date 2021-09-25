@@ -7,6 +7,7 @@ import com.app.model.Customer;
 import com.app.repository.CustomerRepository;
 import com.app.service.CustomerCRUDService;
 
+
 @Service
 public class CustomerCRUDServiceImpl implements CustomerCRUDService {
 	@Autowired
@@ -39,9 +40,21 @@ public class CustomerCRUDServiceImpl implements CustomerCRUDService {
 	public Customer findByCustomerEmail(String customerEmail) {
 		Customer c=new Customer();
 		c=repository.findByCustomerEmail(customerEmail);
-		
 		return c;
 	
 	}
 
+//	@Override
+	public boolean ifCustomerExist(String email)throws Exception {
+//		Customer c=new Customer();
+//		c=repository.findByCustomerEmail(email);
+////		System.out.println("error");
+//		if(c.equals(null)) {
+////	   if(c.isEmpty()) {
+////			System.out.println("error2");
+//        	return false;
+//	      }
+//	   
+	   return true;
+}
 }

@@ -21,8 +21,14 @@ public class CustomerCRUDController {
 	private CustomerCRUDService service;
 
 	@PostMapping("/customer")
-	public Customer addCustomer(@RequestBody Customer customer) {
-
+	public Customer addCustomer(@RequestBody Customer customer) throws Exception {
+		String email = customer.getCustomerEmail();
+//		 Customer c=new Customer();
+//		if (service.ifCustomerExist(email)) {
+//			System.out.print("working@");
+//			return c;
+//		}
+//		System.out.print("customerexist@");
 		return service.addCustomer(customer);
 
 	}
