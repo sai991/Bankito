@@ -44,17 +44,14 @@ public class CustomerCRUDServiceImpl implements CustomerCRUDService {
 	
 	}
 
-//	@Override
+    @Override
 	public boolean ifCustomerExist(String email)throws Exception {
-//		Customer c=new Customer();
-//		c=repository.findByCustomerEmail(email);
-////		System.out.println("error");
-//		if(c.equals(null)) {
-////	   if(c.isEmpty()) {
-////			System.out.println("error2");
-//        	return false;
-//	      }
-//	   
-	   return true;
+		Customer c=new Customer();
+		c=repository.findByCustomerEmail(email);
+		if(c.getCustomerEmail().equals(email)) {
+			return true;
+		}
+	   
+	   return false;
 }
 }

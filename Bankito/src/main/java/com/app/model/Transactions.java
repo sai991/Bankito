@@ -21,7 +21,7 @@ public class Transactions {
 	@GeneratedValue
 	private int transactionId;
 	private String transactionType;
-	private Date transactionDate;
+	private String transactionDate;
 	private long transactionAmount;
 	private String transactionStatus;
 

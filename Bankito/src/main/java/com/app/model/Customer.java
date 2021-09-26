@@ -22,7 +22,8 @@ public class Customer {
 	private String customerEmail;
 	private String customerPassword;
 	private String customerCity;
-	private int customerContact;
+	private long customerContact;
 	//customer_address(improvising)
 	private long customerBalance;
+
 }

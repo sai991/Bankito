@@ -1,5 +1,7 @@
 package com.app.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.app.configuration.AppConfiguration;
 import com.app.model.Customer;
 import com.app.service.CustomerCRUDService;
 
@@ -19,16 +22,17 @@ public class CustomerCRUDController {
 
 	@Autowired
 	private CustomerCRUDService service;
+	
 
 	@PostMapping("/customer")
 	public Customer addCustomer(@RequestBody Customer customer) throws Exception {
 		String email = customer.getCustomerEmail();
-//		 Customer c=new Customer();
-//		if (service.ifCustomerExist(email)) {
-//			System.out.print("working@");
-//			return c;
-//		}
-//		System.out.print("customerexist@");
+		 Customer c=new Customer();
+		if (service.ifCustomerExist(email)) {
+		
+			throw new Exception();
+		}
+
 		return service.addCustomer(customer);
 
 	}

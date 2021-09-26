@@ -15,10 +15,10 @@ import lombok.Data;
 @Entity
 @Table
 public class Accounts {
+	
 private int customerId;
-@TableGenerator(name = "Address_Gen", initialValue = 10000, allocationSize = 100)
 @Id
-@GeneratedValue(strategy = GenerationType.TABLE, generator = "Address_Gen")
+@GeneratedValue
 private int accountId;
 
 }
